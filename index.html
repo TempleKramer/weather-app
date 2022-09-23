@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body class="flex-column min-100-vh">
+    <header class ="hero">
+        <h1 class="app-title"> Weather </h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+        <div class="card">
+            <h3 class="card-header">Search for a City</h3>
+            <form id="user-form" class="card-body">
+                <label class="form-label" for="city-name">City name</label>
+                <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input"/>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+        <div class="card">
+            <div id="city-buttons" class="card-body">
+                <button data-city="houston" class="btn"></button>
+                
+        </div>
+    </div>
+
+    <div class="col-12 col-md-8">
+        <h2 class="subtitle">Showing Forecast for: <span id="city-search"></span></h2>
+        <div id="forecast-container" class="list-group">
+
+        </div>
+    </div>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
